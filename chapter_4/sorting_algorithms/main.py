@@ -10,8 +10,21 @@ class Influencer:
 # dont touch above this line
 
 
-def vanity(influencer):
-    pass
+def vanity(influencer): 
+    #using hasattr to handle unexpected inputs more gracefully
+    #if influencer is not None, empty or zero we execute the code, else we return None
+    if hasattr(influencer, "num_bio_links") and hasattr(influencer, "num_selfies"):    
+        num_bio_links = influencer.num_bio_links
+        num_selfies =influencer.num_selfies 
+        vanity = (num_bio_links * 5) + num_selfies
+        return vanity
+
+    return None
 
 def vanity_sort(influencers):
-    pass
+    
+    if influencers:
+        sort = sorted(influencers, key=vanity)
+        return sort
+    return []
+
