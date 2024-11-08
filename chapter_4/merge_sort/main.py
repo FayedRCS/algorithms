@@ -1,5 +1,10 @@
 def merge_sort(nums):
-    pass
+    
+    if len(nums) < 2:
+        return nums
+    
+    
+
 
 
 def merge(first, second):
