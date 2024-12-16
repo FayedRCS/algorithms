@@ -11,5 +11,4 @@ Adding to chapter 4:
 
 focus points: understanding how algorithms work under the hood. What works when, and why
 
-    
 
