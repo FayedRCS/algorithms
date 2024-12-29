@@ -8,4 +8,3 @@ Adding to chapter 4:
       complete 10-14 (insertion sort) - started
      
 focus points: understanding how algorithms work under the hood. What works when, and why
-
